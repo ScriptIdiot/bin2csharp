@@ -26,7 +26,7 @@ if __name__ == '__main__':
 	parser.add_argument("shellcodeFile", help="File name containing the raw shellcode to be converted")
 	args = parser.parse_args() 
 
-		#------------------------------------------------------------------------
+	#------------------------------------------------------------------------
 	# Open shellcode file and read all bytes from it
 	try:
 		shellcodeBytes = open(args.shellcodeFile, "rb").read()
