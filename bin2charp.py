@@ -13,8 +13,8 @@ def convert(data):
         o = lambda x: x if isinstance(x, int) else ord(x) # handle data being bytes not string
         output_str += chr(o(current))
 
-    ciphertext = '0x' + ',0x'.join(hex(ord(x))[2:] for x in output_str)
-    return ciphertext
+    result = '0x' + ',0x'.join(hex(ord(x))[2:] for x in output_str)
+    return result
 
 
 if __name__ == '__main__':
